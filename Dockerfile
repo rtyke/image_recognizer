@@ -10,3 +10,5 @@ ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/usr/src
 
 EXPOSE 5000
+
+RUN ["python3", "app/create_db.py"]

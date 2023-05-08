@@ -6,15 +6,12 @@ cd image_recognizer
 ```
 
 ```shell
-docker-compose build 
-docker-compose up -d
-
-docker exec -it face-recognizer sh -c "python3 app/create_db.py"
+docker-compose up --build -d
 ```
 
 check it's working
 ```shell
-curl -i --request GET --url http://127.0.0.1:5002
+curl -i --request GET --url http://127.0.0.1:5001
 ```
 
 # Usage
