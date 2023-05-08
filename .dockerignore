@@ -1,0 +1,64 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+docker-compose.yml
+Dockerfile
+.docker
+.dockerignore
+Taskfile.Deploy.dist.yml
+
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+**/*.py[cod]
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Virtual environment
+#.env
+.venv/
+venv/
+
+# IDE
+.idea
+.vscode/
+
+# logs
+/app/logs/
+/logs/
+
+# another
+.DS_Store
+temp/
+tmp/
+tmp
+temp
+notes.md
+
+# db
+*.db

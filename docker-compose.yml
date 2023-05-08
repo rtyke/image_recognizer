@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+    app:
+        build:
+            context: .
+        container_name: face-recognizer
+        volumes:
+          - "./static/uploads/temp:/usr/src/static/uploads/temp"
+#        command: python3 app/runner.py
+        # todo add creating db to entrypoint
+        # entry point is launched as daemon
+#        command: python app/create_db.py; python -m app
+#        command: python app/create_db.py
+        entrypoint: python -m app
+#        entrypoint: python app/create_db.py
+#        command: python -m app
+        ports:
+          - "5002:5000"
