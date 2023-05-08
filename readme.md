@@ -1,15 +1,20 @@
 # Start service
+Clone the repo
+```shell
+git clone git@github.com:rtyke/image_recognizer.git
+cd image_recognizer
+```
 
 ```shell
 docker-compose build 
-docker-compose up
+docker-compose up -d
 
 docker exec -it face-recognizer sh -c "python3 app/create_db.py"
 ```
 
 check it's working
 ```shell
-curl -i --request GET --url http://127.0.0.1:5001
+curl -i --request GET --url http://127.0.0.1:5002
 ```
 
 # Usage
